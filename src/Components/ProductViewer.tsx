@@ -4,9 +4,7 @@ import useMacbookStore from "../Store"
 const ProductViewer = () => {
 
     const {color,setColor,size,setSize} = useMacbookStore();
-
-
-
+    
   return (
     <section id="product-viewer" className="pt-6">
         <h2>Take a closer look</h2>
@@ -27,8 +25,6 @@ const ProductViewer = () => {
                 </div>
             </div>
         </div>
-
-        <div>Product canvas</div>
     </section>
   )
 }
