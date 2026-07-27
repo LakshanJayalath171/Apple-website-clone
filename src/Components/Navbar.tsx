@@ -2,8 +2,8 @@ import { navLinks } from '../constants'
 
 const Navbar = () => {
   return (
-    <header>
-        <div className='w-full flex items-center justify-between mx-10 my-4'>
+    <header className=''>
+        <div className='w-full h-full flex items-center justify-between mx-10 my-4'>
         <img src="./logo.svg" alt="apple logo" />
 
         <ul className='justify-center gap-6 hidden sm:flex'>
