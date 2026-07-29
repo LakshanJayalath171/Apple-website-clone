@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import Highlight from "./Components/Highlight"
 import Navbar from "./Components/Navbar"
@@ -18,6 +19,7 @@ const App = () => {
      <ShowcaseDetails/>
      <Perfomance/>
      <Highlight/>
+     <Footer/>
     </>
   )
 }
