@@ -1,4 +1,5 @@
 import Hero from "./Components/Hero"
+import Highlight from "./Components/Highlight"
 import Navbar from "./Components/Navbar"
 import Perfomance from "./Components/Perfomance"
 import ProductViewer from "./Components/ProductViewer"
@@ -16,6 +17,7 @@ const App = () => {
      <Showcase/>
      <ShowcaseDetails/>
      <Perfomance/>
+     <Highlight/>
     </>
   )
 }
