@@ -1,3 +1,12 @@
+import title from '/public/title.png'
+import cart from '/public/cart.svg'
+import search from "/public/search.svg"
+import logo from "/public/logo.svg"
+
+import heroVideo from "/public/videos/hero.mp4"
+
+export {title,cart,search,logo,heroVideo}
+
 const navLinks = [
     { label: "Store" },
     { label: "Mac" },

@@ -1,10 +1,10 @@
-import { navLinks } from '../constants'
+import { cart, logo, navLinks, search } from '../constants'
 
 const Navbar = () => {
   return (
     <header className=''>
         <div className='w-full h-full flex items-center justify-between mx-10 my-4'>
-        <img src="./logo.svg" alt="apple logo" />
+        <img src={logo} alt="apple logo" />
 
         <ul className='justify-center gap-6 hidden sm:flex'>
             {navLinks.map((items,index) => (
@@ -16,10 +16,10 @@ const Navbar = () => {
 
         <div className='flex gap-3'>
             <button>
-                <img src="./search.svg" alt="search" />
+                <img src={search} alt="search" />
             </button>
             <button>
-                <img src="./cart.svg" alt="cart" />
+                <img src={cart} alt="cart" />
             </button>
         </div>
     </div>
