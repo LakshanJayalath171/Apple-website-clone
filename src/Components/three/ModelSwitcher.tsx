@@ -50,7 +50,6 @@ const ModelSwitcher = ({scale,isMobile}) => {
   },[scale])
 
   const controlConfig ={
-    snap:true,
     speed: 1,
     zoom:1,
     polar:[-Math.PI,Math.PI],
