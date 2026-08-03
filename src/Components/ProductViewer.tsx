@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import useMacbookStore from "../Store"
+import useMacbookStore from "../Store/index.ts"
 import { Canvas } from "@react-three/fiber";
 import StudioLights from "./three/StudioLights";
 import ModelSwitcher from "./three/ModelSwitcher";

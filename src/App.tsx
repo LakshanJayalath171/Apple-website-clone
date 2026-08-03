@@ -1,3 +1,4 @@
+import Features from "./Components/Features"
 import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import Highlight from "./Components/Highlight"
@@ -18,6 +19,7 @@ const App = () => {
      <Showcase/>
      <ShowcaseDetails/>
      <Perfomance/>
+     <Features/>
      <Highlight/>
      <Footer/>
     </>
