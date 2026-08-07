@@ -10,12 +10,12 @@ import clsx from "clsx"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
-
+import * as THREE from 'three';
 gsap.registerPlugin(ScrollTrigger,useGSAP)
 
 
 const ModelScroll = ()=>{
-    const groupRef = useRef(null);
+    const groupRef = useRef<THREE.Group>(null);
     const isMobile = useMediaQuery({query:'(max-width:1024px)'})
     const {setTexture} = useMacbookStore()
 
@@ -66,7 +66,7 @@ const ModelScroll = ()=>{
             const video = document.createElement('video');
 
             Object.assign(video,{
-                src:feature.path,
+                src:feature.videoPath,
                 muted:true,
                 playsInline:true,
                 preload:'auto',

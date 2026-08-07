@@ -25,19 +25,19 @@ const Highlight = () => {
     
   return (
     <section id="highlights">
-        <h2>There’s never been abetter time to upgrade</h2>
-        <h3>Here’s what you get with the new MacBook Pro.</h3>
+        <h2>There’s never been abetter time to upgrade</h2>
+        <h3>Here’s what you get with the new MacBook Pro.</h3>
 
         <div className="masonry">
             <div className="left-column">
                 <div>
                     <img src="/laptop.png" alt="laptop" />
-                    <p>Fly through demanding tasksup to 9.8x faster.</p>
+                    <p>Fly through demanding tasksup to 9.8x faster.</p>
                 </div>
 
                 <div>
                     <img src="/sun.png" alt="laptop" />
-                    <p>A stunningLiquid Retina XDR display.</p>
+                    <p>A stunningLiquid Retina XDR display.</p>
                 </div>
             </div>
 
