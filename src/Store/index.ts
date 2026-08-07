@@ -1,18 +1,37 @@
-import {create} from "zustand";
+import { create } from "zustand";
 
-const useMacbookStore = create((set) => ({
-  color:'#2e2c2e',
-  setColor: (color:string) => set({color}),
+interface MacbookStore {
+  color: string;
+  setColor: (color: string) => void;
 
-  size:0.08,
-  setSize: (size:number) => set({size}),
+  size: number;
+  setSize: (size: number) => void;
 
-  
+  texture: string;
+  setTexture: (texture: string) => void;
 
-  texture:'../public/videos/feature-1.mp4',
-  setTexture: (texture:string) => set({texture}),
+  reset: () => void;
+}
 
-  reset: () => set({color:'#2e2c2e', size:0.08, texture:'public/videos/feature-1.mp4'}),
-}))
+const useMacbookStore = create<MacbookStore>((set) => ({
+  color: "#2e2c2e",
 
-export default useMacbookStore
+  setColor: (color: string) => set({ color }),
+
+  size: 0.08,
+
+  setSize: (size: number) => set({ size }),
+
+  texture: "/videos/feature-1.mp4",
+
+  setTexture: (texture: string) => set({ texture }),
+
+  reset: () =>
+      set({
+        color: "#2e2c2e",
+        size: 0.08,
+        texture: "/videos/feature-1.mp4",
+      }),
+}));
+
+export default useMacbookStore;
