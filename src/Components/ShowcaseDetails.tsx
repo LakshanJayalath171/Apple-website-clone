@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ShowcaseDetails = () => {
   return (
      <section id="showcase" className="mt-64">
@@ -29,7 +27,7 @@ const ShowcaseDetails = () => {
                 to your fingertips.
               </p>
               <p className="text-primary">
-                <a href="">Learn more about Apple Intelligence</a>
+                <a href="">Learn more about Apple Intelligence</a>
               </p>
             </div>
 
